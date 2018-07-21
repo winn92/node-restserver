@@ -25,5 +25,5 @@ if (process.env.NODE_ENV === 'dev') {
 
 //process.env.URLDB = urlDB || process.env.MONGO_URI;
 
-console.log(process.env);
+console.log("Mongo URI", process.env.MONGO_URI);
 process.env.URLDB = process.env.MONGO_URI || 'mongodb://localhost:27017/cafe';
