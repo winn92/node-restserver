@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 
 var productoSchema = new Schema({
+    img: { type: String, required: false },
     nombre: { type: String, required: [true, 'El nombre es necesario'] },
     precioUni: { type: Number, required: [true, 'El precio únitario es necesario'] },
     descripcion: { type: String, required: false },
